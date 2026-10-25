@@ -1,0 +1,119 @@
+    1  whoami
+    2  sudo dnf update && sudo dnf upgrade
+    3  clear
+    4  ip addr
+    5  hostname
+    6  ip -4 addr show
+    7  ip route show default
+    8  sudo arp-scan 10.0.2.0/24
+    9  sudo dnf install arp-scan
+   10  sudo dnf list-installed | grep arp-scan
+   11  dnf list-installed | grep arp-scan
+   12  dnf list installed
+   13  dnf list installed | grep arp-scan
+   14  rpm --query --info arp-scan
+   15  sudo apr-scan 10.0.2.0/24
+   16  sudo arp-scan 10.0.2.0/24
+   17  sudo dnf install nmap -y
+   18  rpm --query --info nmap
+   19  sudo nmap -O 10.0.2.3
+   20  hostname
+   21  whoami
+   22  ip addr
+   23  sudo systemctl status sshd
+   24  sudo systemctl enable sshd
+   25  sudo systemctl status sshd
+   26  sudo systemctl start sshd
+   27  sudo systemctl status sshd
+   28  shutdown now
+   29  ip route show default
+   30  ip -4 addr
+   31  shutdown now
+   32  sudo cat /etc/rancher/rke2/config.yaml 
+   33  sudo systemctl start rke2-service
+   34  sudo systemctl start rke-agent.service
+   35  sudo systemctl start rke2-agent.serivce
+   36  sudo systemctl start rke2-agent
+   37  sudo systemctl status rke2-agent
+   38  reboot
+   39  sustemctl reboot -i
+   40  systemctl reboot -i
+   41  curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE=agent sh -
+   42  sudo -i
+   43  sudo systemctl enable --now rke2-agent.service
+   44  sudo systemctl start rke2-agent
+   45  systemctl start rke2-agent
+   46  sudo systemctl status rke2-agent
+   47  reboot
+   48  systemctl reboot -i
+   49  sudo systemctl status rke2-agent
+   50  reboot
+   51  docker run hello-world
+   52  docker ps
+   53  docker ps -a
+   54  docker start exciting_feynman
+   55  docker ps
+   56  docker ps -a
+   57  rpm --query --infor crun-vm
+   58  rpm --query --info crun-vm
+   59  docker run --runtime crun-vm -it --name fedora-vm quay.io/containerdisks/fedora:40 --password fedora
+   60  which crun-vm
+   61  vim /etc/docker/daemon.json
+   62  sudo vim /etc/docker/daemon.json
+   63  sudo systemctl restart docker
+   64  sudo systemctl status docker
+   65  clear
+   66  sudo docker info | grep -i runtimes
+   67  docker info
+   68  docker run --runtime crun-vm -it --name fedora-vm quay.io/containerdisks/fedora:40 --password fedora
+   69  docker ps
+   70  docker ps --all
+   71  docker run --runtime crun-vm -it --name fedora-vm quay.io/containerdisks/fedora:40 "" --password fedora
+   72  docker rm -f fedora-vm
+   73  docker run --runtime crun-vm -it --name fedora-vm quay.io/containerdisks/fedora:40 "" --password fedora
+   74  sudo journalctl -xe | grep -i crun-vm
+   75  sudo /srv/sbin/crun-vm run ruay.io/containerddisks/fedora:40
+   76  sudo /usr/sbin/crun-vm run ruay.io/containerddisks/fedora:40
+   77  sudo docker rm -f fedora-vm
+   78  sudo docker run --runtime crun-vm -it --name fedora-vm quay.io/containerdisks/fedora:40 "" --password fedora
+   79  sudo journalctl -u docker -u containerd -b --no-pager | tail -100
+   80  sudo dnf install -y qemu-system-x86-core qemu-img libvirt-client virtiofsd
+   81  ls -l /usr/bin/qemu-system-x86_64 
+   82  sudo podman run --runtime crun-vm -it quay.io/containerdisks/fedora:40
+   83  lsmod | grep kvm
+   84  sudo modprob kvm-intel
+   85  sudo dnf isntall -y kmod
+   86  sudo dnf install -y kmod
+   87  sudo modprobe mvk-intel
+   88  sudo modprobe kvm-intel
+   89  sudo dnf install -y node-exporter
+   90  rpm --query --info node-exporter
+   91  sudo systemctl status node-exporter
+   92  node-exporter --version
+   93  sudo systemctl enable --now node-exporter
+   94  sudo systemctl enable --now prometheus-node-exporter
+   95  rpm --query --info prometheus-node-exporter
+   96  systemctl status prometheus-node-exporter
+   97  sudo systemctl stop prometheus-node-exporter
+   98  sudo systemctl disable prometheus-node-exporter
+   99  docker run -d --name node-exporter --restart=unless-stopped -p 9100:9100 v /proc:/host/proc:ro -v /sys:/host/sys:ro \
+  100  docker run -d --restart=always --name node-exporter -p 9100:9100 quay.io/prometheus/node-exporter:latest
+  101  docker ps
+  102  hostname -I
+  103  ip addr
+  104  ip addr 4
+  105  ip addr v4
+  106  ip addr -v4
+  107  ip addr -4
+  108  host -I
+  109  hostname -I
+  110  sudo firewall-cmd --add-port=9100/tcp --permanent
+  111  cd /
+  112  cd ~
+  113  cd Desktop/
+  114  ls -l
+  115  cd monitoriing/
+  116  ls -l
+  117  cd lab1/
+  118  history
+  119  history >> cheat_sheet.txt
